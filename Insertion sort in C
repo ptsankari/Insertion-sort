@@ -1,0 +1,24 @@
+//Youtube video https://www.youtube.com/watch?v=Tz7vBodZqo8 by Portfolio courses
+
+
+#include <stdio.h>
+void is(int a[],int n);
+int main() {
+    int a[]={9,8,6,5,4,3,7,1};
+    is(a,8);
+    for(int i=0;i<8;i++){
+        printf("%d\t",a[i]);
+    }
+}
+    void is(int a[],int n){
+        for(int i=1;i<8;i++){
+            int key=a[i];
+            int j=j-1;
+            
+            while(j>=0 && a[j]>key){
+                a[j+1]=a[j];
+                j--;
+            }
+            a[j+1]=key;
+        }
+    }
